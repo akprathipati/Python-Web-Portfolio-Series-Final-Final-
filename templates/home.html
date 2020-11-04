@@ -1,24 +1,16 @@
 {% extends "base.html" %}
+{% block title %}Ak's Project | Home{% endblock %}
 
-{% block head %}
-  <title>{{name}}| Home </title>
-{% endblock %}
-
-{% block script %}
-    <script src="https://threejs.org/build/three.js"></script>
-    <script src="{{ url_for('static', filename='vanta.birds.min.js') }}"></script>
-    <script>
-
-    VANTA.BIRDS({
-      el: "body",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      wingSpan: 40.0
-    })
-    </script>
+<!-- most code after this is plain text code -->
+{% block content%}
+<body background-color: >
+  </br>
+  <h1 style="text-align:center;">  AkaTeam Calculus </h1>
+  <div>
+    <p style="margin:70px;">Welcome to AkaTeam's Calculus Website. Here we aim to teach how to use calculus concepts. This website gives you access to videos, calculators, and our coding journals. We hope that this website is able to give you the help that you require.</p>
+  </div>
+  <!-- image source -->
+   <!--animation-->
+  <img src="https://calculushowto.com/wp-content/uploads/2018/10/cropped-calculus.png">
+</body>
 {% endblock %}
